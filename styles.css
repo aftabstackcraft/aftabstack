@@ -276,7 +276,7 @@ p {
 .hero h1 {
   max-width: 760px;
   color: var(--white);
-  font-size: clamp(2.35rem, 5vw, 4.35rem);
+  font-size: clamp(1.15rem, 5vw, 3.15rem);
   line-height: 1.04;
   font-weight: 800;
   letter-spacing: 0;
@@ -285,7 +285,7 @@ p {
 .hero-copy p {
   max-width: 700px;
   color: #cbd5e1;
-  font-size: 1.08rem;
+  font-size: 0.8rem;
 }
 
 .cta-row {
