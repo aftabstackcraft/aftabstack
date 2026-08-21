@@ -88,18 +88,16 @@ button {
   align-items: center;
   gap: 10px;
   color: var(--white);
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: 0;
+
 }
 
 .logo-mark {
-  width: 34px;
-  height: 34px;
+  width: 48px;
+  height: 48px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(16, 185, 129, 0.4);
-  border-radius: 8px;
+  border-radius: 22px;
   color: var(--green);
   background: rgba(16, 185, 129, 0.08);
   font-weight: 800;
