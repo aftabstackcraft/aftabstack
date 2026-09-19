@@ -1,279 +1,895 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="AftabCodes portfolio website for Aftab, an aspiring frontend developer focused on JavaScript logic, UI systems, and consistent public learning.">
-  <title>AftabCodes | Aspiring Frontend Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Aftab Shaikh - Frontend Developer building responsive websites and interactive web applications."
+  >
+
+  <title>Aftab Shaikh | Frontend Developer</title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
 </head>
 
 <body>
-  <header class="site-header" id="site-header">
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
     <div class="container nav">
-      <a class="logo" href="#home" aria-label="AftabCodes home">
-        <span class="logo-mark"><img src="images/logo.png" alt="Logo"></span>
+
+      <a href="#home" class="logo">
+        <img
+          src="images/logo.png"
+          alt="Aftab Shaikh logo"
+        >
+
         <span>Aftabstackcraft</span>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle navigation menu"
-        aria-expanded="false" aria-controls="nav-links">
-        <span></span>
+
+      <button
+        class="menu-button"
+        id="menu-button"
+        aria-label="Open navigation menu"
+      >
+        ☰
       </button>
 
-      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
-        <a href="#home" class="active">Home</a>
+
+      <nav class="nav-links" id="nav-links">
+
+        <a href="#home">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#certification">Certification</a>
+
         <a href="#contact">Contact</a>
+
       </nav>
+
     </div>
+
   </header>
 
+
   <main>
+
+    <!-- ================= HERO ================= -->
+
     <section class="hero" id="home">
-      <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="container">
-        <div class="hero-copy">
-          <span class="eyebrow">FRONTEND DEVELOPMENT • JAVASCRIPT</span>
-          <h1>Frontend Developer building modern, responsive & interactive web experiences.
-          </h1>
-          <p>I build responsive websites and interactive web applications with HTML, CSS, and JavaScript, with a focus on clean interfaces and problem solving.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://github.com/aftabstackcraft" target="_blank" rel="noreferrer">View
-              GitHub</a>
-            <a class="btn btn-secondary" href="#contact">Let's Connect</a>
-          </div>
+
+      <div class="container hero-content">
+
+        <p class="eyebrow">
+          FRONTEND DEVELOPER • JAVASCRIPT
+        </p>
+
+        <h1>
+          I build modern, responsive &
+          interactive web experiences.
+        </h1>
+
+        <p class="hero-description">
+          I'm Aftab, a frontend developer focused on
+          building clean websites and interactive web
+          applications with HTML, CSS and JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#projects"
+            class="button primary-button"
+          >
+            View Projects
+          </a>
+
+          <a
+            href="https://github.com/aftabstackcraft"
+            target="_blank"
+            class="button secondary-button"
+          >
+            GitHub
+          </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section about" id="about">
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section" id="about">
+
       <div class="container">
+
         <div class="section-heading">
-          <span class="eyebrow">About &amp; Journey</span>
-          <h2>From creative visuals to frontend development.</h2>
+
+          <p class="eyebrow">
+            ABOUT ME
+          </p>
+
+          <h2>
+            From creative visuals to frontend development.
+          </h2>
+
         </div>
 
-        <div class="about-layout">
-          <div class="about-copy">
-            <p>I started by exploring visual design and AI-generated creative work, which helped me develop an eye for composition, spacing, hierarchy, and visual storytelling.</p>
-            <p>Over time, I became more interested in the logic behind interfaces not just how a website looks, but how it works. That led me deeper into frontend development and JavaScript.</p>
-            <p>I’m currently focused on building responsive, interactive web experiences and strengthening my problem-solving skills through hands-on projects. After completing my JavaScript journey, I’m now moving toward React.</p>
-            <p>I am also committed to <strong>building in public</strong>. Sharing progress, lessons, and small wins
-              keeps the journey honest and creates a record of growth.</p>
+
+        <div class="about-grid">
+
+          <div class="about-text">
+
+            <p>
+              I started my creative journey by exploring
+              visual design and AI-generated creative work.
+              That experience helped me develop an eye for
+              composition, spacing and visual hierarchy.
+            </p>
+
+            <p>
+              Over time, I became more interested in the
+              logic behind websites — not just how an
+              interface looks, but how it actually works.
+              That led me deeper into frontend development
+              and JavaScript.
+            </p>
+
+            <p>
+              I recently completed my JavaScript Developer
+              Certification and I'm now moving toward React
+              while building real projects to strengthen
+              my frontend skills.
+            </p>
+
           </div>
 
-          <aside class="journey-panel" aria-label="Journey highlights">
-            <div class="journey-item">
-              <span>Origin</span>
-              <strong>AI Creative Technologist</strong>
-              <p>Developed a strong eye for composition, visual balance, and product storytelling.</p>
+
+          <div class="about-card">
+
+            <div class="about-item">
+
+              <span>ORIGIN</span>
+
+              <h3>
+                Visual & AI Creative Work
+              </h3>
+
+              <p>
+                Developed an eye for visual composition
+                and digital design.
+              </p>
+
             </div>
-            <div class="journey-item">
-              <span>Current Focus</span>
-              <strong>Frontend Development</strong>
-              <p>Building durable foundations in JavaScript, responsive systems, and interface behavior.</p>
+
+
+            <div class="about-item">
+
+              <span>CURRENT FOCUS</span>
+
+              <h3>
+                Frontend Development
+              </h3>
+
+              <p>
+                Building responsive interfaces with
+                HTML, CSS and JavaScript.
+              </p>
+
             </div>
-            <div class="journey-item">
-              <span>Next</span>
-              <strong>React Development</strong>
-              <p>Expanding my frontend skills by building applications with React.</p>
+
+
+            <div class="about-item">
+
+              <span>NEXT</span>
+
+              <h3>
+                React Development
+              </h3>
+
+              <p>
+                Expanding my frontend skills through
+                React projects.
+              </p>
+
             </div>
-          </aside>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section matrix" id="skills">
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="section skills-section" id="skills">
+
       <div class="container">
-        <div class="section-heading" id="projects">
-          <span class="eyebrow">Skills</span>
-          <h2>Tools and technologies I work with.</h2>
-          <p>Skills I learning and have.</p>
-        </div>
 
-        <div class="cards">
-          <article class="card">
-            <div class="card-topline">
-              <h3>Frontend</h3>
-            </div>
-            <p>
-              <ul class="Frontend-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive Design</li>
-                <li>DOM Manipulation</li>
-              </ul>
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-topline">
-              <h3>JavaScript</h3>
-            </div>
-            <p>
-              <ul class="Frontend-list">
-                <li>ES6+</li>
-                <li>Async/Await</li>
-                <li>Fetch API</li>
-                <li>JSON</li>
-                <li>Local Storage</li>
-                <li>Functional Programming</li>
-                <li>Algorithms & Problem Solving</li>
-              </ul>
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-topline">
-              <h3>Tools</h3>
-            </div>
-            <p>
-              <ul class="Frontend-list">
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-                <li>DaVinci Resolve</li>
-              </ul>
-            </p>
-          </article>
-
-           <article class="card">
-            <div class="card-topline">
-              <h3>Tools</h3>
-            </div>
-            <p>
-              <ul class="Frontend-list">
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-                <li>DaVinci Resolve</li>
-              </ul>
-            </p>
-          </article>
-          
-           <article class="card">
-            <div class="card-topline">
-              <h3>Tools</h3>
-            </div>
-            <p>
-              <ul class="Frontend-list">
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>VS Code</li>
-                <li>DaVinci Resolve</li>
-              </ul>
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section project" id="project">
-      <div class="container">
-        <div class="section-heading" id="projects">
-          <span class="eyebrow">Projects</span>
-          <h2>Three lanes of growth: logic, impact, and design.</h2>
-          <p>Each track reflects a different part of my work: the JavaScript fundamentals I am sharpening, the business
-            outcomes I have already delivered, and the design instincts that give my interfaces an edge.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-topline">
-              <h3>Core JavaScript Logic &amp; Algorithms</h3>
-            </div>
-            <p>Solving algorithmic puzzles on FreeCodeCamp daily to build an iron-clad JS foundation. Mastering loops,
-              arrays, and DOM manipulation.</p>
-            <div class="card-foot">
-              <span class="dot"></span>
-              <span class="badge badge-learning">Coming Soon with Continuous Learning</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-topline">
-              <h3>Local SEO &amp; GMB Optimization</h3>
-            </div>
-            <p>Successfully optimized and ranked a local retail business on Google Maps, boosting their visibility from
-              37th to 13th position.</p>
-            <div class="card-foot">
-              <span class="dot"></span>
-              <span class="badge badge-live">Live &amp; Executed</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-topline">
-              <h3>Learning Video Editing In Davinci Resolve</h3>
-            </div>
-            <p>Learning to make a motion graphics content , saas preview video, and cinematic color grading</p>
-            <div class="card-foot">
-              <span class="dot"></span>
-              <span class="badge badge-design">Design Portfolio</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Contact</span>
-          <h2>Let's build something clear, useful, and memorable.</h2>
-          <p>Whether you want to collaborate, discuss frontend learning, or connect over thoughtful digital products,
-            you can reach me directly through the details below.</p>
+
+          <p class="eyebrow">
+            SKILLS
+          </p>
+
+          <h2>
+            Technologies and tools I work with.
+          </h2>
+
         </div>
 
-        <div class="contact-layout">
-          <div class="contact-details">
-            <div class="detail-block">
-              <span class="detail-label">Email</span>
-              <a class="detail-value" href="mailto:aftabstackcraft@gmail.com">aftabstackcraft@gmail.com</a>
+
+        <div class="skills-grid">
+
+
+          <div class="skill-card">
+
+            <h3>
+              Frontend
+            </h3>
+
+            <ul>
+
+              <li>HTML5</li>
+
+              <li>CSS3</li>
+
+              <li>JavaScript</li>
+
+              <li>Responsive Design</li>
+
+              <li>DOM Manipulation</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <h3>
+              JavaScript
+            </h3>
+
+            <ul>
+
+              <li>ES6+</li>
+
+              <li>Arrays & Objects</li>
+
+              <li>Async / Await</li>
+
+              <li>Fetch API</li>
+
+              <li>JSON</li>
+
+              <li>Local Storage</li>
+
+              <li>Algorithms & Problem Solving</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <h3>
+              Tools
+            </h3>
+
+            <ul>
+
+              <li>Git</li>
+
+              <li>GitHub</li>
+
+              <li>VS Code</li>
+
+              <li>DaVinci Resolve</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <h3>
+              Currently Learning
+            </h3>
+
+            <ul>
+
+              <li>React</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <h3>
+              Additional Creative Skills
+            </h3>
+
+            <ul>
+
+              <li>AI Visuals</li>
+
+              <li>Motion Graphics</li>
+
+              <li>Visual Composition</li>
+
+              <li>Video Editing</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            PROJECTS
+          </p>
+
+          <h2>
+            Things I've built and continue to build.
+          </h2>
+
+          <p>
+            A combination of frontend websites and
+            JavaScript applications.
+          </p>
+
+        </div>
+
+
+        <!-- WEBSITE PROJECTS -->
+
+        <h3 class="project-category">
+          Websites
+        </h3>
+
+
+        <div class="projects-grid">
+
+
+          <!-- Restaurant -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <span>RESTAURANT WEBSITE</span>
             </div>
-            <div class="detail-block">
-              <span class="detail-label">Profiles</span>
-              <div class="detail-links">
-                <a class="detail-link" href="https://www.linkedin.com/in/aftabstackcraft/" target="_blank"
-                  rel="noreferrer">LinkedIn</a>
-                <a class="detail-link" href="https://github.com/aftabstackcraft" target="_blank"
-                  rel="noreferrer">GitHub</a>
-                <a class="detail-link" href="https://x.com/aftabstackcraft" target="_blank" rel="noreferrer">Twitter</a>
-                <a class="detail-link" href="https://www.instagram.com/aftabstackcraftt/" target="_blank"
-                  rel="noreferrer">Instagram</a>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                Frontend Website
+              </p>
+
+              <h3>
+                Restaurant Website
+              </h3>
+
+              <p>
+                A modern responsive restaurant website
+                with menu, services, about and contact
+                sections.
+              </p>
+
+              <div class="technology-list">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
               </div>
+
+              <div class="project-links">
+
+                <a
+                  href="#"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
-            <div class="detail-block">
-              <span class="detail-label">Availability</span>
-              <span class="detail-value">Open to learning opportunities, collaborations, and frontend
-                conversations.</span>
+
+          </article>
+
+
+          <!-- Gym -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <span>GYM WEBSITE</span>
             </div>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                Frontend Website
+              </p>
+
+              <h3>
+                Gym Website
+              </h3>
+
+              <p>
+                A responsive fitness website focused on
+                memberships, trainers, programs and
+                contact information.
+              </p>
+
+              <div class="technology-list">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank">
+                  Live Demo
+                </a>
+
+                <a href="#" target="_blank">
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Salon -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <span>SALON WEBSITE</span>
+            </div>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                Frontend Website
+              </p>
+
+              <h3>
+                Salon Website
+              </h3>
+
+              <p>
+                A clean salon website showcasing services,
+                pricing, team members and booking
+                information.
+              </p>
+
+              <div class="technology-list">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank">
+                  Live Demo
+                </a>
+
+                <a href="#" target="_blank">
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- APP PROJECTS -->
+
+        <h3 class="project-category apps-heading">
+          JavaScript Applications
+        </h3>
+
+
+        <div class="projects-grid">
+
+
+          <!-- Weather App -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <span>WEATHER APP</span>
+            </div>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                JavaScript Application
+              </p>
+
+              <h3>
+                Weather App
+              </h3>
+
+              <p>
+                A weather application that retrieves
+                weather information from an API and
+                dynamically updates the interface.
+              </p>
+
+              <div class="technology-list">
+
+                <span>JavaScript</span>
+
+                <span>Fetch API</span>
+
+                <span>Async/Await</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank">
+                  Live Demo
+                </a>
+
+                <a href="#" target="_blank">
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Forum -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <span>FORUM LEADERBOARD</span>
+            </div>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                JavaScript Application
+              </p>
+
+              <h3>
+                Forum Leaderboard
+              </h3>
+
+              <p>
+                A dynamic forum interface that retrieves
+                API data and renders topics, users,
+                categories and activity information.
+              </p>
+
+              <div class="technology-list">
+
+                <span>JavaScript</span>
+
+                <span>API</span>
+
+                <span>DOM</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#" target="_blank">
+                  Live Demo
+                </a>
+
+                <a href="#" target="_blank">
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- Third App -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              <span>COMING SOON</span>
+            </div>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                JavaScript Application
+              </p>
+
+              <h3>
+                More Coming Soon
+              </h3>
+
+              <p>
+                A new JavaScript application focused on
+                real-world functionality and problem solving.
+              </p>
+
+              <div class="technology-list">
+
+                <span>JavaScript</span>
+
+                <span>DOM</span>
+
+                <span>API</span>
+
+              </div>
+
+              <div class="project-links">
+
+                <a href="#">
+                  Coming Soon
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATION ================= -->
+
+    <section
+      class="section certification-section"
+      id="certification"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            CERTIFICATION
+          </p>
+
+          <h2>
+            JavaScript Developer Certification.
+          </h2>
+
+        </div>
+
+
+        <div class="certification-card">
+
+          <div class="certificate-icon">
+            🏆
+          </div>
+
+
+          <div class="certificate-content">
+
+            <p class="certificate-issuer">
+              freeCodeCamp
+            </p>
+
+            <h3>
+              JavaScript Developer Certification
+            </h3>
+
+            <p>
+              Successfully completed the JavaScript
+              Developer Certification, representing
+              approximately 300 hours of work.
+            </p>
+
+            <p class="certificate-date">
+              September 18, 2026
+            </p>
+
+
+            <a
+              href="https://www.freecodecamp.org/certification/aftabstackcraft/javascript-v9"
+              target="_blank"
+              class="button primary-button"
+            >
+              Verify Certificate
+            </a>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            CONTACT
+          </p>
+
+          <h2>
+            Let's build something useful.
+          </h2>
+
+          <p>
+            Open to frontend projects, collaborations
+            and development opportunities.
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <div>
+
+            <span>
+              EMAIL
+            </span>
+
+            <a
+              href="mailto:aftabstackcraft@gmail.com"
+            >
+              aftabstackcraft@gmail.com
+            </a>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              PROFILES
+            </span>
+
+            <div class="social-links">
+
+              <a
+                href="https://github.com/aftabstackcraft"
+                target="_blank"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aftabstackcraft/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://x.com/aftabstackcraft"
+                target="_blank"
+              >
+                X
+              </a>
+
+              <a
+                href="https://www.instagram.com/aftabstackcraftt/"
+                target="_blank"
+              >
+                Instagram
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Aftab. All rights reserved.</p>
-      <p>Building consistency, one loop at a time.</p>
-    </div>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <p>
+      © 2026 Aftab Shaikh. All rights reserved.
+    </p>
+
+    <p>
+      Building, learning and shipping.
+    </p>
+
   </footer>
 
-  <script src="script.js"></script>
-</body>
 
+  <script src="script.js"></script>
+
+</body>
 </html>
